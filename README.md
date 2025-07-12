@@ -1,3 +1,5 @@
+# FacturasApp
+
 Aplicación backend para la **gestión de facturación**, creada con Node.js y PostgreSQL. Permite registrar clientes, productos y generar facturas con cálculos automáticos. Ideal para pequeñas empresas o como base de práctica para proyectos CRUD con autenticación.
 
 ---

@@ -13,7 +13,6 @@
 
 ### 1. Clona el repositorio
 
-```bash
 git clone https://github.com/MicaelBurgos/notes-api.git
 cd notes-api
 2. Instala las dependencias
@@ -94,7 +93,3 @@ Micael Burgos
 
 📄 Licencia
 Este proyecto está licenciado bajo la MIT License.
-
-yaml
-Copiar
-Editar

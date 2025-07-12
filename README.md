@@ -1,15 +1,25 @@
-# FacturasApp
+Aplicación backend para la **gestión de facturación**, creada con Node.js y PostgreSQL. Permite registrar clientes, productos y generar facturas con cálculos automáticos. Ideal para pequeñas empresas o como base de práctica para proyectos CRUD con autenticación.
 
-FacturasApp es una aplicación básica de gestión de facturas desarrollada en Node.js y PostgreSQL. Permite registrar clientes, productos y generar facturas asociadas. Pensada para pequeños negocios o como proyecto base para prácticas.
+---
 
-## Características
+## ✨ Características principales
 
-- Registro de clientes
-- Registro de productos
-- Generación de facturas
-- Listado de facturas por cliente
-- Cálculo automático del total
-- Estructura sencilla y extensible
+✅ Registro y listado de clientes  
+✅ Registro de productos  
+✅ Generación de facturas con totales  
+✅ Asociación de múltiples productos por factura  
+✅ Listado de facturas por cliente  
+✅ Estructura modular y limpia, fácil de extender  
+
+---
+
+## 🧩 Tecnologías utilizadas
+
+- 🟩 **Node.js** + **Express** (servidor backend)
+- 🐘 **PostgreSQL** con **Sequelize** (ORM)
+- 🔐 **JWT** (autenticación segura)
+- 🧾 **PDFKit** (opcional para generar facturas en PDF)
+- 📦 **dotenv**, **nodemon**, **bcrypt**, entre otros
 
 ## ¿Cómo funciona?
 

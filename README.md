@@ -1,95 +1,50 @@
-# 📝 Notes API
+# FacturasApp
 
-**Notes API** es un backend simple hecho con Node.js y PostgreSQL que permite a los usuarios registrar una cuenta y gestionar sus notas personales. Ideal para practicar desarrollo de APIs, autenticación y estructura modular de proyectos backend.
+FacturasApp es una aplicación básica de gestión de facturas desarrollada en Node.js y PostgreSQL. Permite registrar clientes, productos y generar facturas asociadas. Pensada para pequeños negocios o como proyecto base para prácticas.
 
-## 🚀 Funcionalidades
+## Características
 
-- Registro e inicio de sesión con autenticación JWT
-- Crear, leer, actualizar y eliminar notas
-- Rutas protegidas por token
-- Estructura limpia y escalable
+- Registro de clientes
+- Registro de productos
+- Generación de facturas
+- Listado de facturas por cliente
+- Cálculo automático del total
+- Estructura sencilla y extensible
 
-## ⚙️ Instalación
+## ¿Cómo funciona?
 
-### 1. Clona el repositorio
+1. Se cargan los datos de los clientes y productos.
+2. Se seleccionan productos para armar una factura.
+3. Se genera la factura con fecha, cliente y total.
+4. Las facturas pueden consultarse y editarse desde el sistema.
 
-git clone https://github.com/MicaelBurgos/notes-api.git
-cd notes-api
-2. Instala las dependencias
-bash
-Copiar
-Editar
-npm install
-3. Crea un archivo .env con las variables necesarias
-env
-Copiar
-Editar
-PORT=3000
-DATABASE_URL=postgres://usuario:contraseña@localhost:5432/notesdb
-JWT_SECRET=clave_super_secreta
-4. Ejecuta las migraciones de la base de datos
-bash
-Copiar
-Editar
-npx sequelize-cli db:create
-npx sequelize-cli db:migrate
-5. Inicia el servidor en desarrollo
-bash
-Copiar
-Editar
-npm run dev
-La API estará corriendo en: http://localhost:3000
+## Requisitos
 
-🛠 Tecnologías utilizadas
-Node.js
+- Node.js instalado
+- PostgreSQL en funcionamiento
+- npm o yarn como gestor de paquetes
 
-Express.js
+## Pasos para ejecutar
 
-PostgreSQL
+1. Clona el repositorio:
 
-Sequelize
+   `git clone https://github.com/MicaelBurgos/facturas-app.git`
 
-JWT
+2. Instala dependencias:
 
-dotenv
+   `npm install`
 
-📬 Endpoints
-Método	Ruta	Descripción
-POST	/auth/register	Crea un nuevo usuario
-POST	/auth/login	Inicia sesión y devuelve un token
-GET	/api/notes	Lista todas las notas del usuario
-POST	/api/notes	Crea una nueva nota
-PUT	/api/notes/:id	Actualiza una nota existente
-DELETE	/api/notes/:id	Elimina una nota
+3. Configura el archivo `.env` con tus datos de base de datos.
 
-⚠️ Las rutas bajo /api/notes requieren autenticación con token JWT:
-Authorization: Bearer <tu_token>
+4. Crea la base de datos y ejecuta las migraciones.
 
-📂 Estructura del proyecto
-bash
-Copiar
-Editar
-notes-api/
-├── src/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── app.js
-├── .env
-├── package.json
-└── README.md
-📌 Información adicional
-Este proyecto está pensado para usarse como base para apps más grandes.
+5. Inicia el servidor:
 
-Puedes integrarlo fácilmente con un frontend hecho en React, Vue o Angular.
+   `npm run dev`
 
-Próximamente: versión con Swagger + Docker.
+## Autor
 
-✍️ Autor
-Micael Burgos
-📧 micael@example.com
-🔗 GitHub | LinkedIn
+Micael Burgos  
+Contacto: micael@example.com  
+GitHub: [MicaelBurgos](https://github.com/MicaelBurgos)
 
-📄 Licencia
-Este proyecto está licenciado bajo la MIT License.
